@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mercedes-Benz</title>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" href="img/logo mercy no bg.png">
+   </head>
+   <body>
+      <!-- Header -->
+      <header class="header">
+         <div class="logo">
+            <img src="img/logo mercy.png" alt="Mercedes-Benz Logo">
+            <span>Mercedes-Benz</span>
+         </div>
+         <nav class="nav-links">
+            <ul>
+               <li><a href="#service">Layanan</a></li>
+               <li><a href="#features">Fitur</a></li>
+               <li><a href="#car-recommendations">Recommendations</a></li>
+               <li><a href="#kontak">Kontak</a></li>
+            </ul>
+         </nav>
+         <div class="auth-buttons">
+            <button class="btn daftar">Daftar</button>
+            <button class="btn masuk">Masuk</button>
+         </div>
+         <button class="hamburger" onclick="toggleMenu()">
+         ☰
+         </button>
+      </header>
+      <main>
+         <!-- Hero Section -->
+         <section class="hero">
+            <div class="hero-content">
+               <h1>Welcome to <br> <span><b>Mercedes-Benz</b></span></h1>
+               <p><strong>Mercedes-Benz</strong> is not just about creating cars, it's about designing masterpieces that combine precision, performance, and luxury.</p>
+               <p>Discover the ultimate driving experience like no other.</p>
+               <a href="#" class="btn">Order Now →</a>
+            </div>
+            <div class="hero-image">
+               <img src="img/mercy no bg1.png" alt="Mercedes-Benz Car">
+            </div>
+         </section>
+         <!-- Our Service -->
+         <article id="service">
+            <h2>Our Service</h2>
+            <p>Services available with us</p>
+            <div class="service-container">
+               <div class="service-box">
+                  <img src="img/logo mercy.png" alt="Buying a Car" />
+                  <h3>New Car</h3>
+                  <p>Get a brand-new luxury car today.</p>
+               </div>
+               <div class="service-box">
+                  <img src="img/carservice.png" alt="Car Service" />
+                  <h3>Service Car</h3>
+                  <p>Maintain your car with expert service.</p>
+               </div>
+               <div class="service-box">
+                  <img src="img/carrent.png" alt="Car Rental" />
+                  <h3>Car Rental</h3>
+                  <p>Rent your dream car easily and quickly.</p>
+               </div>
+            </div>
+         </article>
+         <article id="features">
+            <div class="feature-content">
+               <div class="feature-text">
+                  <h2>Our Features</h2>
+                  <p>
+                     Discover the superior features of our latest car models.
+                     Experience luxury, performance, and advanced technology in every
+                     drive.
+                  </p>
+               </div>
+               <div class="carousel">
+                  <button class="prev">&#10094;</button>
+                  <div class="carousel-container">
+                     <img
+                        src="img/fitur.1.jpg"
+                        class="carousel-item"
+                        alt="Feature 1"
+                        />
+                     <img
+                        src="img/fitur2.jpg"
+                        class="carousel-item"
+                        alt="Feature 2"
+                        />
+                     <img
+                        src="img/fitur3.jpg"
+                        class="carousel-item"
+                        alt="Feature 3"
+                        />
+                  </div>
+                  <button class="next">&#10095;</button>
+               </div>
+            </div>
+         </article>
+         <!-- car recommendations -->
+         <section id="car-recommendations">
+            <h2>Car Recommendations</h2>
+            <div class="car-container">
+               <div class="car-box">
+                  <img src="img/mercedes benz a-class.jpg" alt="Mercedes-Benz A-Class">
+                  <h3>Mercedes-Benz A-Class</h3>
+                  <p>IDR. 120000000</p>
+                  <a href="#">Buy</a>
+               </div>
+               <div class="car-box">
+                  <img src="img/mercedes benz eqe-class.jpg" alt="Mercedes-Benz EQE">
+                  <h3>Mercedes-Benz EQE</h3>
+                  <p>IDR. 15000000000</p>
+                  <a href="#">Buy</a>
+               </div>
+               <div class="car-box">
+                  <img src="img/merci glc.jpg" alt="Mercedes-Benz GLC">
+                  <h3>Mercedes-Benz GLC</h3>
+                  <p>IDR. 130000000000</p>
+                  <a href="#">Buy</a>
+               </div>
+               <div class="car-box">
+                  <img src="img/mercedes benz g-class.jpg" alt="Mercedes-Benz G-Class">
+                  <h3>Mercedes-Benz G-Class</h3>
+                  <p>IDR. 6000000000</p>
+                  <a href="#">Buy</a>
+               </div>
+               <div class="car-box">
+                  <img src="img/mercedes benz amg gt.jpg" alt="Mercedes-Benz AMG-GT">
+                  <h3>Mercedes-Benz AMG-GT</h3>
+                  <p>IDR. 800000000</p>
+                  <a href="#">Buy</a>
+               </div>
+               <div class="car-box">
+                  <img src="img/mercedes benz v-class.jpg" alt="Mercedes-Benz V-Class">
+                  <h3>Mercedes-Benz V-Class</h3>
+                  <p>IDR. 3000000000</p>
+                  <a href="#">Buy</a>
+               </div>
+            </div>
+         </section>
+         </div>
+         <!-- Side -->
+         <aside class="sidebar open" id="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">&#62;</button>
+            <div class="sidebar-container">
+               <!-- Profil Sales Representative -->
+               <div class="sales-profile">
+                  <img src="img/sales.jpg" alt="Sales Representative" class="sales-photo">
+                  <h3>Rafli Pratama</h3>
+                  <p>Professional Sales Advisor</p>
+                  <a href="https://wa.me/6281234567890" class="contact-btn">Chat via WhatsApp</a>
+               </div>
+               <div class="quick-contact">
+                  <h3>Contact Us</h3>
+                  <ul class="contact-info">
+                     <li><i class="fas fa-map-marker-alt"></i> Jl. Bojong Becik No.30-45, Bandung</li>
+                     <li><i class="fas fa-phone"></i> <a href="#">022-655422321</a></li>
+                     <li><i class="fas fa-envelope"></i> <a href="#">support@mercedes-benz.com</a></li>
+                  </ul>
+               </div>
+               <!-- Sosial Media -->
+               <div class="social-media">
+                  <h3>Follow Us</h3>
+                  <div class="social-icons">
+                     <a href="#"><i class="fab fa-facebook"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </aside>
+      </main>
+      <script src="js/script.js"></script>
+   </body>
+   <!-- Footer -->
+   <footer class="footer" id="kontak">
+      <div class="footer-container">
+         <!-- Informasi Perusahaan -->
+         <div class="footer-info">
+            <h3>Mercedes-Benz</h3>
+            <p>Luxury, Performance, and Innovation.</p>
+            <p>&copy; 2024 Mercedes-Benz. All Rights Reserved.</p>
+         </div>
+         <!-- Kontak -->
+         <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <ul>
+               <li><i class="fas fa-map-marker-alt"></i> Jl. Bojong Becik No.30-45, Bandung</li>
+               <li><i class="fas fa-phone"></i> 022-655422321</li>
+               <li><i class="fas fa-envelope"></i> support@mercedes-benz.com</li>
+            </ul>
+         </div>
+         <!-- Formulir Saran -->
+         <div class="footer-form">
+            <h3>Berikan Saran Anda</h3>
+            <form>
+               <input type="text" placeholder="Nama Anda" required>
+               <textarea placeholder="Tulis saran Anda..." required></textarea>
+               <button type="submit">Kirim Saran</button>
+            </form>
+         </div>
+      </div>
+   </footer>
+</html>
